@@ -57,9 +57,9 @@ public class HeapTest
         return false;
     }
 
-    public static void perm_test()
+    public static void perm_test(int size)
     {
-        int p[] = new int[10];
+        int p[] = new int[size];
         for(int i=0;i<p.length;i++)
             p[i] = i;
 
@@ -84,6 +84,7 @@ public class HeapTest
             }
             n++;
         } while(nextperm(p));
+        System.out.println("permutations tested: "+n);
 
         return;
     }
@@ -91,7 +92,8 @@ public class HeapTest
     public static void main(String arg[])
         throws Exception
     {
-        perm_test();
+        for(int size=0;size<=10;size++)
+            perm_test(size);
         return;
     }
 }
