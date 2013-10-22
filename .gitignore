@@ -1,0 +1,6 @@
+*.jar
+*.class
+/gen
+/out
+/dist
+
