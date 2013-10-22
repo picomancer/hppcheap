@@ -141,6 +141,7 @@ public class KTypeHeap<KType>
             this.heap[n] = p_e;
             n = p;
         }
+        this._size++;
         return true;
     }
 
